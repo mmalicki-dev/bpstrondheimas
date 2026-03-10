@@ -1,14 +1,13 @@
+import Navigation from "../../Molecules/Navigation/Navigation";
+import Logo from "../../Atoms/Logo/Logo";
+import LanguageSwitcher from "../../Molecules/LanguageSwitcher/LanguageSwitcher";
+
 const Header = () => {
   return (
     <header>
-      <nav>
-        <div>Logo</div>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
+      <Logo />
+      <Navigation />
+      <LanguageSwitcher />
     </header>
   );
 };
