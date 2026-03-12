@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
+import styles from "./Navigation.module.css";
 
-const Navigation = () => {
+interface NavigationProps {
+  isOpen?: boolean;
+}
+
+const Navigation = ({ isOpen = false }: NavigationProps) => {
   return (
-    <nav>
+    <nav className={`${styles.nav} ${isOpen ? styles.navOpen : ""}`}>
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
