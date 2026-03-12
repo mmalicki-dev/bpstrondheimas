@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Logo />
+      <Logo isFull />
       <Navigation isOpen={isMenuOpen} />
       <LanguageSwitcher />
       <div className={styles.hamburger}>

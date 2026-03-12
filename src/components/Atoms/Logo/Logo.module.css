@@ -1,0 +1,38 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon {
+  /* viewBox is 46x32, so aspect ratio ~1.44 */
+  width: 46px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.nameWrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.nameMain {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #2c6d96;
+  white-space: nowrap;
+}
+
+.nameSub {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.55rem;
+  color: #222;
+  white-space: nowrap;
+}
