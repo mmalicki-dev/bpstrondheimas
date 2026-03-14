@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
-import MainLayout from "../../components/Templates/MainLayout/MainLayout";
-import Typography from "../../components/Atoms/Typography/Typography";
 
 const NotFound = () => {
   return (
-    <MainLayout>
-      <Typography variant="h1">404</Typography>
-      <Typography variant="p">Page not found.</Typography>
+    <div>
+      <h1>404</h1>
+      <p>Page not found.</p>
       <Link to="/">Go back home</Link>
-    </MainLayout>
+    </div>
   );
 };
 
