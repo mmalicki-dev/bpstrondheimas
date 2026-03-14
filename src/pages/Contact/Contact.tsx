@@ -1,8 +1,10 @@
+import MainLayout from "../../components/Templates/MainLayout/MainLayout";
+
 const Contact = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Contact</h1>
-    </div>
+    </MainLayout>
   );
 };
 

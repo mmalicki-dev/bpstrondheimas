@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.lower {
+  font-weight: 400;
+}

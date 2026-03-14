@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 600;
+}

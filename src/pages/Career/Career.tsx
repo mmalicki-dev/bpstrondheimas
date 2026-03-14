@@ -1,9 +1,11 @@
+import MainLayout from "../../components/Templates/MainLayout/MainLayout";
+
 const Career = () => {
   return (
-    <div>
+    <MainLayout>
       <h1>Career</h1>
       <p>Explore open positions at BPS Trondheim.</p>
-    </div>
+    </MainLayout>
   );
 };
 
