@@ -10,14 +10,16 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <Logo isFull />
+      <Logo />
       <Navigation isOpen={isMenuOpen} />
-      <LanguageSwitcher />
-      <div className={styles.hamburger}>
-        <HamburgerButton
-          isOpen={isMenuOpen}
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-        />
+      <div className={styles.actions}>
+        <LanguageSwitcher />
+        <div className={styles.hamburger}>
+          <HamburgerButton
+            isOpen={isMenuOpen}
+            onClick={() => setIsMenuOpen((prev) => !prev)}
+          />
+        </div>
       </div>
     </header>
   );
