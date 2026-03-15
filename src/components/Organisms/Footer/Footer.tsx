@@ -8,8 +8,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.top}>
         <SocialMedia />
-        <ContactInfo />
-        <Nav />
+        <div className={styles.bottom}>
+          <ContactInfo />
+          <Nav />
+        </div>
       </div>
       <p className={styles.copy}>&copy; {new Date().getFullYear()} BPS Trondheim AS</p>
     </footer>

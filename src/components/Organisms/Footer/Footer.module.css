@@ -7,8 +7,17 @@
 .top {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
   margin-bottom: 2rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1.5rem;
 }
 
 .copy {
