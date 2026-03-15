@@ -1,0 +1,10 @@
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+}
