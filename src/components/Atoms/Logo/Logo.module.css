@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .text {
@@ -10,10 +12,14 @@
 }
 
 .upper {
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: -0.05em;
 }
 
 .lower {
   font-weight: 400;
+  font-size: 0.6rem;
 }

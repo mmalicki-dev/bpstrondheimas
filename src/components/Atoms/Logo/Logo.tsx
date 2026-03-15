@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Icon from "../Icon/Icon";
 import styles from "./Logo.module.css";
 
@@ -7,7 +8,7 @@ interface LogoProps {
 
 const Logo = ({ full = false }: LogoProps) => {
   return (
-    <div className={styles.logo}>
+    <Link to="/" className={styles.logo}>
       <Icon name="bpstrondheimas_logo" />
       {full && (
         <div className={styles.text}>
@@ -15,7 +16,7 @@ const Logo = ({ full = false }: LogoProps) => {
           <span className={styles.lower}>Trondheim AS</span>
         </div>
       )}
-    </div>
+    </Link>
   );
 };
 
