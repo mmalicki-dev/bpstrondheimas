@@ -2,13 +2,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 .link {
   text-decoration: none;
+  color: var(--white);
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--brand);
 }
 
 .active {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--brand);
 }

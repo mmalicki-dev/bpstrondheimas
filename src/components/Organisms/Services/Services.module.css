@@ -2,25 +2,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  padding: 2rem 0;
+  gap: 2.5rem;
+  padding: 4rem 1.5rem;
+  background-color: var(--dark);
+  color: var(--white);
 }
 
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .centerText {
-  font-size: clamp(1.5rem, 6vw, 3rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 7vw, 3rem);
   font-weight: 700;
   text-align: center;
+  color: var(--white);
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 1.25rem;
   width: 100%;
 }

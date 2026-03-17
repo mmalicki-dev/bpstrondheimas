@@ -19,7 +19,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.58);
 }
 
 .content {
@@ -29,29 +29,38 @@
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
 }
 
 .headline {
-  font-size: clamp(2rem, 8vw, 4rem);
-  color: #fff;
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 9vw, 4rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.15;
 }
 
 .sub {
-  font-size: clamp(1rem, 3vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.85);
-  max-width: 40ch;
+  font-size: clamp(1rem, 3.5vw, 1.25rem);
+  color: var(--muted);
+  max-width: 34ch;
+  line-height: 1.65;
 }
 
 .cta {
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  color: #fff;
-  border: 2px solid #fff;
+  padding: 0.9rem 2.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--brand);
   border-radius: 4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
 }
 
 .cta:hover {
-  background: #fff;
-  color: #000;
+  background-color: #245a7e;
+  color: var(--white);
 }

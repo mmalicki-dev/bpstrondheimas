@@ -1,10 +1,20 @@
 .socialMedia {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  color: var(--white);
 }
 
 .icons {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
+  color: var(--muted);
+}
+
+.icons a {
+  transition: color 0.2s ease;
+}
+
+.icons a:hover {
+  color: var(--brand);
 }
