@@ -1,26 +1,32 @@
 .footer {
   width: 100%;
-  padding: 2rem;
+  padding: 3rem 1.5rem 2rem;
+  background-color: var(--dark);
+  color: var(--white);
   box-sizing: border-box;
 }
 
 .top {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   gap: 1.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
 }
 
 .copy {
-  margin: 0;
+  margin-top: 2rem;
   font-size: 0.75rem;
+  color: var(--muted);
+  text-align: center;
 }

@@ -1,4 +1,19 @@
 .point {
-  font-size: clamp(1.1rem, 3vw, 1.4rem);
-  font-weight: 700;
+  font-size: clamp(0.95rem, 3vw, 1.1rem);
+  font-weight: 600;
+  color: var(--text);
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.point::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.55rem;
+  height: 0.55rem;
+  background-color: var(--brand);
+  border-radius: 50%;
 }

@@ -1,17 +1,41 @@
 .career {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
+  padding: 4rem 1.5rem;
+  background-color: var(--dark);
+}
+
+.intro h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 7vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--muted);
+  max-width: 60ch;
 }
 
 .formSection {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
+  padding: 3rem 1.5rem 4rem;
+  background-color: var(--light);
+}
+
+.formSection h2 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--brand);
 }

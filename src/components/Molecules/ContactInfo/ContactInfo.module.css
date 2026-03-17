@@ -1,5 +1,39 @@
 .contactInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 1rem;
+  color: var(--muted);
+}
+
+.contactInfo h2 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.03em;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.group h3 {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brand);
+}
+
+.group p,
+.group a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.group a:hover {
+  color: var(--white);
 }
