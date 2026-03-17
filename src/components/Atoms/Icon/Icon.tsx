@@ -7,7 +7,7 @@ interface IconProps {
 
 const Icon = ({ name, size = "clamp(2rem, 4vw, 4rem)" }: IconProps) => {
   return (
-    <svg width={size} height={size}>
+    <svg width={size} height={size} fill="currentColor">
       <use href={`${symbolDefs}#icon-${name}`} />
     </svg>
   );

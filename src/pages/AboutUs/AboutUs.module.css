@@ -1,0 +1,9 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.closing {
+  font-size: clamp(2rem, 8vw, 4rem);
+}
