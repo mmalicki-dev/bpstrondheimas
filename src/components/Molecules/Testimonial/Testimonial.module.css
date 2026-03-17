@@ -1,0 +1,18 @@
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.company {
+  font-size: 0.85rem;
+}

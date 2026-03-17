@@ -1,0 +1,4 @@
+.point {
+  font-size: clamp(1.1rem, 3vw, 1.4rem);
+  font-weight: 700;
+}
