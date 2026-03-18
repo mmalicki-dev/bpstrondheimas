@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { type ReactNode } from "react";
 import Header from "../../Organisms/Header/Header";
 import Footer from "../../Organisms/Footer/Footer";
 import styles from "./MainLayout.module.css";
