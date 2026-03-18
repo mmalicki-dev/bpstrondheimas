@@ -9,6 +9,7 @@
 .top {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
@@ -16,7 +17,7 @@
 .bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
   gap: 1.5rem;
   padding-top: 2rem;
