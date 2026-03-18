@@ -1,5 +1,6 @@
 import MainLayout from "../../components/Templates/MainLayout/MainLayout";
 import TextSection from "../../components/Molecules/TextSection/TextSection";
+import OurTeam from "../../components/Molecules/OurTeam/OurTeam";
 import styles from "./AboutUs.module.css";
 
 const AboutUs = () => {
@@ -15,6 +16,7 @@ const AboutUs = () => {
           network of professionals and a thorough understanding of the Nordic labour market, we
           deliver staffing solutions that are reliable, efficient, and built for the long term.
         </TextSection>
+        <OurTeam />
         <TextSection title="Our competence">
           Our team brings hands-on expertise across a wide range of industries, from construction
           and engineering to services and trades. We take the time to understand both the needs of
