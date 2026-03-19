@@ -14,6 +14,17 @@
   transition: background-color 0.2s ease;
 }
 
-.button:hover {
+.primary:hover {
   background-color: #245a7e;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 2px solid var(--brand);
+  color: var(--brand);
+}
+
+.secondary:hover {
+  background-color: var(--brand);
+  color: var(--white);
 }

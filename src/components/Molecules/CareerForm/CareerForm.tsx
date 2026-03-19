@@ -25,6 +25,10 @@ const CareerForm = () => {
     e.preventDefault();
   };
 
+  const handleReset = () => {
+    setForm({ fullName: "", email: "", phone: "", address: "", city: "", coverLetter: "" });
+  };
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <Input label="Full name" name="fullName" value={form.fullName} onChange={handleChange} />
@@ -55,7 +59,10 @@ const CareerForm = () => {
         multiple
         onChange={() => {}}
       />
-      <Button label="Submit application" type="submit" />
+      <div className={styles.buttons}>
+        <Button label="Submit application" type="submit" />
+        <Button label="Reset" variant="secondary" onClick={handleReset} />
+      </div>
     </form>
   );
 };
