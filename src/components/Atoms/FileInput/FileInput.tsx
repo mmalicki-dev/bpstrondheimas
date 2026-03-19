@@ -1,3 +1,4 @@
+import RequiredMark from "../RequiredMark/RequiredMark";
 import styles from "./FileInput.module.css";
 
 interface FileInputProps {
@@ -11,7 +12,9 @@ interface FileInputProps {
 const FileInput = ({ label, name, multiple = false, required, onChange }: FileInputProps) => {
   return (
     <div className={styles.wrapper}>
-      <label htmlFor={name} className={styles.label}>{label}</label>
+      <label htmlFor={name} className={styles.label}>
+        {label}{required && <RequiredMark />}
+      </label>
       <input
         id={name}
         name={name}

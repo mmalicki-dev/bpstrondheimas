@@ -17,8 +17,8 @@ const SubmitStatus = ({ status, onClose }: SubmitStatusProps) => {
   }, [status, onClose]);
 
   return (
-    <div className={styles.overlay}>
-      <div className={styles.card}>
+    <div className={styles.overlay} role="button" tabIndex={0} onClick={onClose} onKeyDown={(e) => e.key === "Escape" && onClose()}>
+      <div className={styles.card} role="presentation" onClick={(e) => e.stopPropagation()}>
         {status === "loading" && (
           <div className={styles.dots}>
             <span className={styles.dot} />

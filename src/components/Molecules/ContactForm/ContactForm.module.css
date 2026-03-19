@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  padding: 3rem 1.5rem 4rem;
+  background-color: var(--light);
+  width: 100%;
 }
 
-.form h2 {
+.formHeader {
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;

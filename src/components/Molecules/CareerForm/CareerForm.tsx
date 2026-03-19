@@ -3,13 +3,18 @@ import Input from "../../Atoms/Input/Input";
 import Textarea from "../../Atoms/Textarea/Textarea";
 import FileInput from "../../Atoms/FileInput/FileInput";
 import Button from "../../Atoms/Button/Button";
+import SubmitButton from "../../Atoms/SubmitButton/SubmitButton";
 import styles from "./CareerForm.module.css";
+
+type Status = "idle" | "loading" | "success" | "error";
 
 interface CareerFormProps {
   onSubmit: () => void;
+  status: Status;
+  onReset: () => void;
 }
 
-const CareerForm = ({ onSubmit }: CareerFormProps) => {
+const CareerForm = ({ onSubmit, status, onReset }: CareerFormProps) => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -66,7 +71,12 @@ const CareerForm = ({ onSubmit }: CareerFormProps) => {
         onChange={() => {}}
       />
       <div className={styles.buttons}>
-        <Button label="Submit application" type="submit" />
+        <div className={styles.mobileSubmit}>
+          <SubmitButton label="Submit application" status={status} onReset={onReset} />
+        </div>
+        <div className={styles.tabletSubmit}>
+          <Button label="Submit application" type="submit" />
+        </div>
         <Button label="Reset" variant="secondary" onClick={handleReset} />
       </div>
     </form>

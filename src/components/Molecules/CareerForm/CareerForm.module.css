@@ -15,3 +15,22 @@
     flex-direction: row;
   }
 }
+
+.mobileSubmit {
+  display: block;
+}
+
+.tabletSubmit {
+  width: 100%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobileSubmit {
+    display: none;
+  }
+
+  .tabletSubmit {
+    display: block;
+  }
+}

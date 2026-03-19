@@ -34,7 +34,7 @@ const Career = () => {
         </div>
         <div className={styles.formSection}>
           <h2>Apply now</h2>
-          <CareerForm onSubmit={handleSubmit} />
+          <CareerForm onSubmit={handleSubmit} status={status} onReset={() => setStatus("idle")} />
         </div>
       </div>
     </MainLayout>
