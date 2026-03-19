@@ -5,7 +5,11 @@ import FileInput from "../../Atoms/FileInput/FileInput";
 import Button from "../../Atoms/Button/Button";
 import styles from "./CareerForm.module.css";
 
-const CareerForm = () => {
+interface CareerFormProps {
+  onSubmit: () => void;
+}
+
+const CareerForm = ({ onSubmit }: CareerFormProps) => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -21,8 +25,9 @@ const CareerForm = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
+    onSubmit();
   };
 
   const handleReset = () => {
@@ -31,9 +36,9 @@ const CareerForm = () => {
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <Input label="Full name" name="fullName" value={form.fullName} onChange={handleChange} />
-      <Input label="Email" name="email" type="email" value={form.email} onChange={handleChange} />
-      <Input label="Phone" name="phone" type="tel" value={form.phone} onChange={handleChange} />
+      <Input label="Full name" name="fullName" value={form.fullName} onChange={handleChange} required />
+      <Input label="Email" name="email" type="email" value={form.email} onChange={handleChange} required />
+      <Input label="Phone" name="phone" type="tel" value={form.phone} onChange={handleChange} required />
       <Input
         label="Address"
         name="address"
@@ -45,6 +50,7 @@ const CareerForm = () => {
         name="city"
         value={form.city}
         onChange={handleChange}
+        required
       />
       <Textarea
         label="Cover letter"
@@ -52,7 +58,7 @@ const CareerForm = () => {
         value={form.coverLetter}
         onChange={handleChange}
       />
-      <FileInput label="Resume" name="resume" onChange={() => {}} />
+      <FileInput label="CV / Resume" name="resume" onChange={() => {}} required />
       <FileInput
         label="Additional files"
         name="additionalFiles"

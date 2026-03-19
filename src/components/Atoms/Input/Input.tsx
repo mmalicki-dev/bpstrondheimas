@@ -5,10 +5,11 @@ interface InputProps {
   name: string;
   type?: string;
   value: string;
+  required?: boolean;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const Input = ({ label, name, type = "text", value, onChange }: InputProps) => {
+const Input = ({ label, name, type = "text", value, required, onChange }: InputProps) => {
   return (
     <div className={styles.wrapper}>
       <label htmlFor={name} className={styles.label}>{label}</label>
@@ -17,6 +18,7 @@ const Input = ({ label, name, type = "text", value, onChange }: InputProps) => {
         name={name}
         type={type}
         value={value}
+        required={required}
         onChange={onChange}
         className={styles.input}
       />
