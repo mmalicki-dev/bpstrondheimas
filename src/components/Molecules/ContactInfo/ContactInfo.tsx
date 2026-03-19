@@ -7,7 +7,7 @@ interface ContactInfoProps {
 const ContactInfo = ({ full = false }: ContactInfoProps) => {
   return (
     <div className={styles.contactInfo}>
-      <h2>Contact us</h2>
+      {!full && <h2>Contact us</h2>}
       {full && (
         <div className={styles.group}>
           <h3>Address</h3>

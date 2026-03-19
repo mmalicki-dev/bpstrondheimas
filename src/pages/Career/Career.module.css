@@ -3,6 +3,31 @@
   flex-direction: column;
 }
 
+.statusArea {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .career {
+    flex-direction: row-reverse;
+  }
+
+  .intro {
+    flex: 1;
+  }
+
+  .formSection {
+    flex: 1;
+  }
+
+  .statusArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -11,18 +36,18 @@
   background-color: var(--dark);
 }
 
-.intro h2 {
-  font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 7vw, 3rem);
-  font-weight: 700;
-  color: var(--white);
-}
-
-.intro p {
+.introText {
   font-size: 1rem;
   line-height: 1.8;
   color: var(--muted);
   max-width: 60ch;
+}
+
+.introHeader {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 7vw, 3rem);
+  font-weight: 700;
+  color: var(--white);
 }
 
 .formSection {

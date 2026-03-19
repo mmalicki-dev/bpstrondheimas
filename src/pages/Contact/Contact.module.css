@@ -3,12 +3,18 @@
   flex-direction: column;
 }
 
-.contact > div {
-  padding: 4rem 1.5rem;
+.contactArea {
+  padding: 0 1.5rem 4rem 1.5rem;
   background-color: var(--dark);
+  width: 100%;
 }
 
-.contact > form {
-  padding: 3rem 1.5rem 4rem;
-  background-color: var(--light);
+.contactArea > div {
+  padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    flex-direction: row-reverse;
+  }
 }

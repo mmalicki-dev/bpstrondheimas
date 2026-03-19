@@ -5,12 +5,17 @@ const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
   { to: "/career", label: "Career" },
+  { to: "/projects", label: "Projects" },
   { to: "/contact", label: "Contact" },
 ];
 
-const Nav = () => {
+interface NavProps {
+  inline?: boolean;
+}
+
+const Nav = ({ inline = false }: NavProps) => {
   return (
-    <nav className={styles.nav}>
+    <nav className={`${styles.nav} ${inline ? styles.inline : ""}`}>
       {links.map(({ to, label }) => (
         <NavLink
           key={to}

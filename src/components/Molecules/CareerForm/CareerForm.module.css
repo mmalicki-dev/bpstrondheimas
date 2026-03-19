@@ -3,3 +3,34 @@
   flex-direction: column;
   gap: 1.25rem;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+  }
+}
+
+.mobileSubmit {
+  display: block;
+}
+
+.tabletSubmit {
+  width: 100%;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mobileSubmit {
+    display: none;
+  }
+
+  .tabletSubmit {
+    display: block;
+  }
+}
