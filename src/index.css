@@ -6,6 +6,7 @@
   --white: #ffffff;
   --text: #1c1c1c;
   --muted: rgba(255, 255, 255, 0.65);
+  --orange: #ff6b00;
   --font-heading: "Playfair Display", serif;
   --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
