@@ -4,23 +4,43 @@
   background-color: var(--light);
 }
 
-.aboutUs > h1 {
-  font-family: var(--font-heading);
-  font-size: clamp(1.75rem, 7vw, 3rem);
-  font-weight: 700;
-  line-height: 1.3;
-  color: var(--white);
-  background-color: var(--dark);
-  padding: 4rem 1.5rem;
+.whoWeAre {
+  display: flex;
+  flex-direction: column;
 }
 
-.closing {
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 9vw, 4rem);
-  font-weight: 700;
-  color: var(--brand);
-  padding: 4rem 1.5rem;
-  text-align: center;
-  background-color: var(--white);
-  line-height: 1.2;
+.textSections {
+  display: flex;
+  flex-direction: column;
 }
+
+@media (min-width: 768px) {
+  .whoWeAre {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .textSections {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .textSections > * {
+    flex: 1;
+  }
+
+  .textSections h2 {
+    min-height: 8rem;
+  }
+}
+
+@media (min-width: 845px) {
+  .textSections h2 {
+    min-height: 5rem;
+  }
+
+  .whoWeAre > * {
+    flex: 1;
+  }
+}
+
