@@ -11,18 +11,27 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 2rem;
 }
 
 .bottom {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  gap: 1.5rem;
-  padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  font-size: 0.9rem;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .top {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .bottom {
+    display: contents;
+  }
 }
 
 .copy {

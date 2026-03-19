@@ -21,3 +21,14 @@
   font-weight: 700;
   color: var(--brand);
 }
+
+.inline {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.inline .link {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}

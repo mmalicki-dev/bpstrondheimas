@@ -31,15 +31,17 @@ const WhyUs = () => {
   return (
     <section className={styles.whyUs}>
       <h2>Why choose us</h2>
-      <div className={styles.points}>
-        {points.map((point) => (
-          <Point key={point} text={point} />
-        ))}
-      </div>
-      <div className={styles.testimonials}>
-        {testimonials.map(({ quote, name, company }) => (
-          <Testimonial key={name} quote={quote} name={name} company={company} />
-        ))}
+      <div className={styles.content}>
+        <div className={styles.points}>
+          {points.map((point) => (
+            <Point key={point} text={point} />
+          ))}
+        </div>
+        <div className={styles.testimonials}>
+          {testimonials.map(({ quote, name, company }) => (
+            <Testimonial key={name} quote={quote} name={name} company={company} />
+          ))}
+        </div>
       </div>
     </section>
   );
