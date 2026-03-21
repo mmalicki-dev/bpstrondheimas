@@ -1,5 +1,6 @@
 import Point from "../../Atoms/Point/Point";
 import Testimonial from "../../Molecules/Testimonial/Testimonial";
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 import styles from "./WhyUs.module.css";
 
 const points = [
@@ -30,19 +31,21 @@ const testimonials = [
 const WhyUs = () => {
   return (
     <section className={styles.whyUs}>
-      <h2>Why choose us</h2>
-      <div className={styles.content}>
-        <div className={styles.points}>
-          {points.map((point) => (
-            <Point key={point} text={point} />
-          ))}
+      <ContentLayout>
+        <h2>Why choose us</h2>
+        <div className={styles.content}>
+          <div className={styles.points}>
+            {points.map((point) => (
+              <Point key={point} text={point} />
+            ))}
+          </div>
+          <div className={styles.testimonials}>
+            {testimonials.map(({ quote, name, company }) => (
+              <Testimonial key={name} quote={quote} name={name} company={company} />
+            ))}
+          </div>
         </div>
-        <div className={styles.testimonials}>
-          {testimonials.map(({ quote, name, company }) => (
-            <Testimonial key={name} quote={quote} name={name} company={company} />
-          ))}
-        </div>
-      </div>
+      </ContentLayout>
     </section>
   );
 };

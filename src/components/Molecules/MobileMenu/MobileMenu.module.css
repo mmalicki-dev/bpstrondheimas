@@ -18,6 +18,12 @@
   transform: translateX(0);
 }
 
+@media (min-width: 768px) {
+  .drawer {
+    display: none;
+  }
+}
+
 .closeButton {
   position: absolute;
   top: 1.25rem;

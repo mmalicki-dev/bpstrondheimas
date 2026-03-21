@@ -1,11 +1,14 @@
 .banner {
+  background-color: var(--brand);
+}
+
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 1.5rem;
-  padding: 4rem 2rem;
-  background-color: var(--brand);
+  padding: 4rem 0;
   color: var(--white);
 }
 
@@ -33,7 +36,9 @@
   border-radius: 4px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
   cursor: pointer;
 }
 

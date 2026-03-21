@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import backgroundVideo from "../../../assets/background_video.mp4";
 import Icon from "../../Atoms/Icon/Icon";
 import styles from "./Hero.module.css";
 
@@ -37,7 +36,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <video
         className={styles.video}
-        src={backgroundVideo}
+        src="/video/background_video.mp4"
         autoPlay
         muted
         loop

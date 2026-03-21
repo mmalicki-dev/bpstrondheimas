@@ -1,16 +1,18 @@
+.contactPage {
+  background-color: var(--dark);
+}
 .contact {
   display: flex;
   flex-direction: column;
 }
 
-.contactArea {
-  padding: 0 1.5rem 4rem 1.5rem;
-  background-color: var(--dark);
-  width: 100%;
-}
-
 .contactArea > div {
   padding: 1rem 0;
+}
+
+.contactArea {
+  padding-left: 1rem;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
