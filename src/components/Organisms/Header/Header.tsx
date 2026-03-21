@@ -5,6 +5,7 @@ import HamburgerButton from "../../Atoms/HamburgerButton/HamburgerButton";
 import MobileMenu from "../../Molecules/MobileMenu/MobileMenu";
 import Nav from "../../Molecules/Nav/Nav";
 import styles from "./Header.module.css";
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,16 +21,23 @@ const Header = () => {
   }, [pathname]);
 
   return (
-    <header className={`${styles.header} ${!isHome || scrolled ? styles.visible : ""}`}>
-      <div className={styles.bar}>
-        <Logo full />
-        <div className={styles.hamburger}>
-          <HamburgerButton isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} />
+    <header
+      className={`${styles.header} ${!isHome || scrolled ? styles.visible : ""}`}
+    >
+      <ContentLayout>
+        <div className={styles.bar}>
+          <Logo full />
+          <div className={styles.hamburger}>
+            <HamburgerButton
+              isOpen={isOpen}
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          </div>
+          <div className={styles.desktopNav}>
+            <Nav inline />
+          </div>
         </div>
-        <div className={styles.desktopNav}>
-          <Nav inline />
-        </div>
-      </div>
+      </ContentLayout>
       <MobileMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
     </header>
   );
