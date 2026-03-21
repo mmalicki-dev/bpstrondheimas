@@ -10,15 +10,15 @@ const Contact = () => {
   return (
     <MainLayout>
       <PageHeader title="Contact us" />
-      <ContentLayout>
-        <div className={styles.contact}>
+      <div className={styles.contact}>
+        <ContentLayout>
           <div className={styles.contactArea}>
             <ContactInfo full />
             <OurTeam compact />
           </div>
           <ContactForm />
-        </div>
-      </ContentLayout>
+        </ContentLayout>
+      </div>
     </MainLayout>
   );
 };

@@ -3,13 +3,15 @@ import styles from "./PageHeader.module.css";
 
 interface PageHeaderProps {
   title: string;
+  subtitle?: string;
 }
 
-const PageHeader = ({ title }: PageHeaderProps) => {
+const PageHeader = ({ title, subtitle }: PageHeaderProps) => {
   return (
     <div className={styles.pageHeader}>
       <ContentLayout>
-        <h1>{title}</h1>
+        <h1 className={styles.title}>{title}</h1>
+        {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
       </ContentLayout>
     </div>
   );

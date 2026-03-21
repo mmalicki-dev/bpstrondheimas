@@ -1,18 +1,16 @@
 import MainLayout from "../../components/Templates/MainLayout/MainLayout";
-import ContentLayout from "../../components/Templates/ContentLayout/ContentLayout";
 import ProjectList from "../../components/Organisms/ProjectList/ProjectList";
 import styles from "./Projects.module.css";
+import PageHeader from "../../components/Molecules/PageHeader/PageHeader";
 
 const Projects = () => {
   return (
     <MainLayout>
       <div className={styles.projects}>
-        <div className={styles.header}>
-          <ContentLayout>
-            <h1>Our projects</h1>
-            <p>A selection of projects where BPS Trondheim has delivered skilled personnel and project support.</p>
-          </ContentLayout>
-        </div>
+        <PageHeader
+          title="Our projects"
+          subtitle="A selection of projects where BPS Trondheim has delivered skilled personnel and project support."
+        />
         <ProjectList />
       </div>
     </MainLayout>
