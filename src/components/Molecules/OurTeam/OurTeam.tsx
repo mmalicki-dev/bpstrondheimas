@@ -11,13 +11,13 @@ const members: TeamMember[] = [
   {
     name: "Erik Solberg",
     role: "Project Manager",
-    image: "https://i.pravatar.cc/200?img=53",
+    image: "/images/avatar1.jpg",
     phone: "+47 911 23 456",
   },
   {
     name: "Mia Larsen",
     role: "Site Engineer",
-    image: "https://i.pravatar.cc/200?img=47",
+    image: "/images/avatar2.jpg",
     phone: "+47 922 34 567",
   },
 ];
