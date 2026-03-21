@@ -4,7 +4,6 @@ import styles from "./Nav.module.css";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
-  { to: "/career", label: "Career" },
   { to: "/projects", label: "Projects" },
   { to: "/contact", label: "Contact" },
 ];
