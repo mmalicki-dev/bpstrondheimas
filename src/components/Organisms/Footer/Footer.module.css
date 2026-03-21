@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  padding: 3rem 1.5rem 2rem;
+  padding: 3rem 0 2rem;
   background-color: var(--dark);
   color: var(--white);
   box-sizing: border-box;

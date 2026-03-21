@@ -1,4 +1,5 @@
 import FeatureBlock from "../../Molecules/FeatureBlock/FeatureBlock";
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 import styles from "./Features.module.css";
 import safetyImg from "../../../assets/safety.png";
 import personellImg from "../../../assets/personell.png";
@@ -25,9 +26,11 @@ const features = [
 const Features = () => {
   return (
     <section className={styles.features}>
-      {features.map(({ title, description, image }, index) => (
-        <FeatureBlock key={title} title={title} description={description} image={image} reverse={index % 2 !== 0} />
-      ))}
+      <ContentLayout>
+        {features.map(({ title, description, image }, index) => (
+          <FeatureBlock key={title} title={title} description={description} image={image} reverse={index % 2 !== 0} />
+        ))}
+      </ContentLayout>
     </section>
   );
 };

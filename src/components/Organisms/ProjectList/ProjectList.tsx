@@ -1,4 +1,5 @@
 import ProjectCard from "../../Molecules/ProjectCard/ProjectCard";
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 import styles from "./ProjectList.module.css";
 
 const projects = [
@@ -39,9 +40,11 @@ const projects = [
 const ProjectList = () => {
   return (
     <div className={styles.list}>
-      {projects.map((project) => (
-        <ProjectCard key={project.title} {...project} />
-      ))}
+      <ContentLayout>
+        {projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </ContentLayout>
     </div>
   );
 };

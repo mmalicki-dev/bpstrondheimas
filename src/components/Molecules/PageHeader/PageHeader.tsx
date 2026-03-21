@@ -1,3 +1,4 @@
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 import styles from "./PageHeader.module.css";
 
 interface PageHeaderProps {
@@ -5,7 +6,13 @@ interface PageHeaderProps {
 }
 
 const PageHeader = ({ title }: PageHeaderProps) => {
-  return <h1 className={styles.pageHeader}>{title}</h1>;
+  return (
+    <div className={styles.pageHeader}>
+      <ContentLayout>
+        <h1>{title}</h1>
+      </ContentLayout>
+    </div>
+  );
 };
 
 export default PageHeader;

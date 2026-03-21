@@ -1,4 +1,5 @@
 import ServiceItem from "../../Molecules/ServiceItem/ServiceItem";
+import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
 import styles from "./Services.module.css";
 
 const services = [
@@ -15,14 +16,16 @@ const services = [
 const Services = () => {
   return (
     <section className={styles.services}>
-      <div className={styles.center}>
-        <span className={styles.centerText}>Workforce Capability</span>
-      </div>
-      <div className={styles.grid}>
-        {services.map(({ icon, label }) => (
-          <ServiceItem key={icon} icon={icon} label={label} />
-        ))}
-      </div>
+      <ContentLayout>
+        <div className={styles.center}>
+          <span className={styles.centerText}>Workforce Capability</span>
+        </div>
+        <div className={styles.grid}>
+          {services.map(({ icon, label }) => (
+            <ServiceItem key={icon} icon={icon} label={label} />
+          ))}
+        </div>
+      </ContentLayout>
     </section>
   );
 };
