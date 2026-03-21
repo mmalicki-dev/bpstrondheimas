@@ -10,13 +10,15 @@ const Contact = () => {
   return (
     <MainLayout>
       <PageHeader title="Contact us" />
-      <div className={styles.contact}>
+      <div className={styles.contactPage}>
         <ContentLayout>
-          <div className={styles.contactArea}>
-            <ContactInfo full />
-            <OurTeam compact />
+          <div className={styles.contact}>
+            <div className={styles.contactArea}>
+              <ContactInfo full />
+              <OurTeam compact />
+            </div>
+            <ContactForm />
           </div>
-          <ContactForm />
         </ContentLayout>
       </div>
     </MainLayout>
