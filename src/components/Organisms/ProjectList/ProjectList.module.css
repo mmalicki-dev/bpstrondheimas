@@ -1,7 +1,22 @@
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding: 2rem 0 4rem;
+.projectPage {
   background-color: var(--light);
+  padding: 2rem 0;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--project-gap);
+}
+
+@media (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

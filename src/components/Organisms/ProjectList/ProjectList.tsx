@@ -39,11 +39,13 @@ const projects = [
 
 const ProjectList = () => {
   return (
-    <div className={styles.list}>
+    <div className={styles.projectPage}>
       <ContentLayout>
-        {projects.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+        <div className={styles.list}>
+          {projects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
       </ContentLayout>
     </div>
   );
