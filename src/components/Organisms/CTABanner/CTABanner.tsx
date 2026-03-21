@@ -6,9 +6,15 @@ const CTABanner = () => {
   return (
     <section className={styles.banner}>
       <ContentLayout>
-        <h2 className={styles.heading}>Ready to secure your workforce?</h2>
-        <p className={styles.sub}>Let's talk. We'll find the right people for your project — fast.</p>
-        <Link to="/contact" className={styles.cta}>Get in touch</Link>
+        <div className={styles.container}>
+          <h2 className={styles.heading}>Ready to secure your workforce?</h2>
+          <p className={styles.sub}>
+            Let's talk. We'll find the right people for your project — fast.
+          </p>
+          <Link to="/contact" className={styles.cta}>
+            Get in touch
+          </Link>
+        </div>
       </ContentLayout>
     </section>
   );
