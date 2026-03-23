@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Erik Solberg",
+    "role": "Project Manager",
+    "image": "/images/avatar1.jpg",
+    "phone": "+47 911 23 456"
+  },
+  {
+    "name": "Mia Larsen",
+    "role": "Site Engineer",
+    "image": "/images/avatar2.jpg",
+    "phone": "+47 922 34 567"
+  }
+]

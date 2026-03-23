@@ -1,26 +1,5 @@
 import styles from "./OurTeam.module.css";
-
-interface TeamMember {
-  name: string;
-  role: string;
-  image: string;
-  phone: string;
-}
-
-const members: TeamMember[] = [
-  {
-    name: "Erik Solberg",
-    role: "Project Manager",
-    image: "/images/avatar1.jpg",
-    phone: "+47 911 23 456",
-  },
-  {
-    name: "Mia Larsen",
-    role: "Site Engineer",
-    image: "/images/avatar2.jpg",
-    phone: "+47 922 34 567",
-  },
-];
+import members from "../../../data/team.json";
 
 interface OurTeamProps {
   compact?: boolean;
