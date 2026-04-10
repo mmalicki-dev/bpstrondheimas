@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "./context/LanguageContext.tsx";
-import { AuthProvider } from "./context/AuthContext.tsx";
+import { LanguageProvider } from "./context/language/LanguageProvider";
+import { AuthProvider } from "./context/auth/AuthProvider";
 import Home from "./pages/Home/Home";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Contact from "./pages/Contact/Contact";

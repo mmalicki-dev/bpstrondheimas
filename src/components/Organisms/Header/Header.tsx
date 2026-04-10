@@ -6,7 +6,7 @@ import MobileMenu from "../../Molecules/MobileMenu/MobileMenu";
 import Nav from "../../Molecules/Nav/Nav";
 import styles from "./Header.module.css";
 import ContentLayout from "../../Templates/ContentLayout/ContentLayout";
-import { useAuth } from "../../../context/useAuth";
+import { useAuth } from "../../../context/auth/useAuth";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);

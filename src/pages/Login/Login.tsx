@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../../components/Atoms/Logo/Logo";
 import Input from "../../components/Atoms/Input/Input";
 import Button from "../../components/Atoms/Button/Button";
-import { useAuth } from "../../context/useAuth";
+import { useAuth } from "../../context/auth/useAuth";
 import styles from "./Login.module.css";
 
 const Login = () => {
