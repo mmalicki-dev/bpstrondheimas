@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./utils/ScrollToTop";
 import { LanguageProvider } from "./context/language/LanguageProvider";
 import { AuthProvider } from "./context/auth/AuthProvider";
 import Home from "./pages/Home/Home";
@@ -13,6 +14,7 @@ function App() {
     <AuthProvider>
       <LanguageProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />
