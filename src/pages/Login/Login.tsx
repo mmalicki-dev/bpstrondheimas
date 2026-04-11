@@ -34,7 +34,8 @@ const Login = () => {
 
         login(data.token);
         navigate("/");
-      } catch {
+      } catch (e) {
+        console.log(e);
         setError("Could not connect to server");
       }
     });
@@ -61,10 +62,7 @@ const Login = () => {
 
           {error && <p className={styles.error}>{error}</p>}
 
-          <Button
-            label={isPending ? "Logging in…" : "Log in"}
-            type="submit"
-          />
+          <Button label={isPending ? "Logging in…" : "Log in"} type="submit" />
         </form>
       </div>
     </div>
