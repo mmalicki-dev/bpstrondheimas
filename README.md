@@ -1,4 +1,4 @@
-# BPS Trondheim AS — Website Demo
+# Trondheim Bygg Service AS — Website Demo
 
 A demo website built for a fictional staffing company
 in Trondheim, Norway.
@@ -8,7 +8,7 @@ form, company presentation and services section.
 
 ## Live Demo
 
-[bpstrondheimas.mateusz-malicki96.workers.dev](https://bpstrondheimas.mateusz-malicki96.workers.dev)
+[trondheimbyggserviceas.mateusz-malicki96.workers.dev](https://trondheimbyggserviceas.mateusz-malicki96.workers.dev/)
 
 ## Features
 
