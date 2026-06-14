@@ -9,7 +9,7 @@ const Projects = () => {
       <div className={styles.projects}>
         <PageHeader
           title="Our projects"
-          subtitle="A selection of projects where BPS Trondheim has delivered skilled personnel and project support."
+          subtitle="A selection of projects where Trondheim Bygg Service AS has delivered skilled personnel and project support."
         />
         <ProjectList />
       </div>

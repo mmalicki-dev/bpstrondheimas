@@ -12,7 +12,7 @@ const points = [
 
 const testimonials = [
   {
-    quote: "BPS Trondheim delivered a full crew within days. The quality of personnel exceeded our expectations and the process was seamless from start to finish.",
+    quote: "Trondheim Bygg Service AS delivered a full crew within days. The quality of personnel exceeded our expectations and the process was seamless from start to finish.",
     name: "Erik Halvorsen",
     company: "Halvorsen Bygg AS",
   },
@@ -22,7 +22,7 @@ const testimonials = [
     company: "NordInfra Solutions",
   },
   {
-    quote: "Scaling our workforce for a large infrastructure project used to be a headache. With BPS Trondheim, it was handled professionally and on time.",
+    quote: "Scaling our workforce for a large infrastructure project used to be a headache. With Trondheim Bygg Service AS, it was handled professionally and on time.",
     name: "Lars Bakke",
     company: "Bakke & Partners",
   },

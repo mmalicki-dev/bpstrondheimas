@@ -10,11 +10,11 @@ interface LogoProps {
 const Logo = ({ full = false, size }: LogoProps) => {
   return (
     <Link to="/" className={styles.logo}>
-      <Icon name="bpstrondheimas_logo" size={size} />
+      <Icon name="trondheim_bygg_service_logo" size={size} />
       {full && (
         <div className={styles.text}>
-          <span className={styles.upper}>Bygg og pro service</span>
-          <span className={styles.lower}>Trondheim AS</span>
+          <span className={styles.upper}>Trondheim Bygg</span>
+          <span className={styles.upper}>Service AS</span>
         </div>
       )}
     </Link>

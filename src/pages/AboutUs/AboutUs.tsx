@@ -15,7 +15,7 @@ const AboutUs = () => {
           <div className={styles.whoWeAre}>
             <TextSection title="Who we are">
               With over five years of experience operating across the Nordics,
-              BPS Trondheim has established itself as a trusted partner for
+              Trondheim Bygg Service AS has established itself as a trusted partner for
               businesses in need of qualified personnel. We understand the key
               challenge facing industries today — finding and securing the right
               people for the right roles. That is exactly what we set out to
@@ -45,7 +45,7 @@ const AboutUs = () => {
               grow alongside your ambitions.
             </TextSection>
             <TextSection title="Full responsibility and project support">
-              When you work with BPS Trondheim, you are not just getting staff —
+              When you work with Trondheim Bygg Service AS, you are not just getting staff —
               you are getting a committed partner. We take full responsibility
               for the personnel we place, handling everything from contracts and
               compliance to follow-up and support throughout the project. Our

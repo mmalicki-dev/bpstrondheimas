@@ -15,7 +15,7 @@ const Footer = () => {
             <Nav />
           </div>
         </div>
-        <p className={styles.copy}>&copy; {new Date().getFullYear()} BPS Trondheim AS</p>
+        <p className={styles.copy}>&copy; {new Date().getFullYear()} Trondheim Bygg Service AS</p>
       </ContentLayout>
     </footer>
   );

@@ -24,17 +24,21 @@ const Login = () => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ password: pwd }),
         });
+        console.log("login befor data func");
 
         const data = (await res.json()) as { token?: string; error?: string };
 
+        console.log("login after data func");
         if (!res.ok || !data.token) {
           setError(data.error ?? "Login failed");
           return;
         }
 
         login(data.token);
+        console.log("loginend func");
         navigate("/");
       } catch (e) {
+        console.log("loginerror func");
         console.log(e);
         setError("Could not connect to server");
       }

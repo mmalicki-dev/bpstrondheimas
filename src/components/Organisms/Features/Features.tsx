@@ -4,7 +4,7 @@ import styles from "./Features.module.css";
 const features = [
   {
     title: "Safety",
-    description: "Safety is never an afterthought at BPS Trondheim. Every member of our workforce is trained to meet strict HSE standards, ensuring a safe working environment on every site, every time.",
+    description: "Safety is never an afterthought at Trondheim Bygg Service AS. Every member of our workforce is trained to meet strict HSE standards, ensuring a safe working environment on every site, every time.",
     image: "/images/safety.png",
   },
   {
